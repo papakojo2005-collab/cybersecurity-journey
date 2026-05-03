@@ -7,3 +7,4 @@ If sudo allows a command like "backup_script", and the script calls something li
 
 #How To Prevent This
 Instead of using "sudo apt update", use "sudo /usr/bin/apt update"
+
