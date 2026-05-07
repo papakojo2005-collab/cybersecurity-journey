@@ -1,10 +1,22 @@
-#Cyberseecurity
+**Introduction**
+
+
 
 Attackers can abuse sudo if PATH is not locked down.
 
-#Example
-If sudo allows a command like "backup_script", and the script calls something like "tar", if PATH is not locked down, the attacker can place a fake tar earlier in the path, and their code runs as root.
 
-#How To Prevent This
+
+**Example**
+
+---
+
+If sudo allows a command like "backup\_script", and the script calls something like "tar", if PATH is not locked down, the attacker can place a fake tar earlier in the path, and their code runs as root.
+
+
+
+**How To Prevent This**
+
+---
+
 Instead of using "sudo apt update", use "sudo /usr/bin/apt update"
 
